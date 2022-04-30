@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+AddType application/x-httpd-alt-php73___lsphp /opt/cloudlinux/alt-php73/root/usr/bin/lsphp .html .htm
